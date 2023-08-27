@@ -1,0 +1,20 @@
+<div class="">
+    <h2>APi data demo</h2>
+    <ul>
+        <li *ngFor="let item of data">
+            <div class="card">
+                <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+                  <img src="{{item.image}}" class="img-fluid"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text">{{item.name}}</p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+        </li>
+    </ul>
+</div>
